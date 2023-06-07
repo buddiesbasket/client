@@ -1,0 +1,43 @@
+Server Configuration
+--------------------
+Modules : bcryptjs
+		  cors
+		  dotenv
+		  express
+		  express-validator
+		  gravator
+		  jsonwebtoken
+		  mongoose
+		  stripe
+		  
+npm install bcryptjs cors dotenv express  express-validator gravator jsonwebtoken mongoose stripe
+
+REST API configuration
+----------------------
+Routers: userRouter, productRouter, paymentRouter, orderRouter
+
+a) userRouter:
+				
+		1)Register a User
+			url: /user/register
+			fields: name, email, password, confirm password
+			method: POST
+			access: public
+			
+		2)Login a User
+			url: /user/login
+			fields: email, password
+			method: POST
+			access: public
+			
+		3)Get User info
+			url: /user/
+			fields: no-fields
+			method: GET
+			access: private
+
+		4)To Create/Update Address
+			url: /user/address
+			fields: flat, street, landmark, city, state, country, pin, mobile
+			method: GET
+			access: private	

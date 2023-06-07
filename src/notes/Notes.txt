@@ -1,0 +1,48 @@
+BrainsKart Application (MEAN)
+-----------------------------
+Client -> Angular + NGRX + Bootstrap
+Server -> Node JS + Express JS + Mongo DB
+
+Folder Structure
+----------------
+BrainsKart
+	->client
+		->client code
+	->server code
+	
+Client Configuration
+--------------------
+->create an Angular application "client" -> ng new client
+
+->root
+	->components
+		-> navbar, home
+	->models
+	->services
+	
+->modules -> products, orders, users
+ng g m products --route products --module app.module
+ng g m orders --route orders --module app.module
+ng g m users --route users --module app.module
+
+->each module have its own things
+	components,
+	services,
+	interceptors,
+	guards,
+	models,
+	actions,
+	reducers,
+	effects
+	
+->Users Module:
+	components -> login, register, profile
+	services -> user
+	
+->products Module:
+	components -> mens-wear, women-wear, kids-wear, products-upload, products-details
+	services -> product
+	
+->Orders Module:
+	components -> cart, checkout, order-list
+	services -> order

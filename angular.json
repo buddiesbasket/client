@@ -25,9 +25,18 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./Bootstrap/css/mdb.min.css",
+              "./Bootstrap/css/styles.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./Bootstrap/js/jquery.js",
+              "./Bootstrap/js/popper.js",
+              "./Bootstrap/js/bootstrap.bundle.js",
+              "./Bootstrap/js/mdb.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +103,10 @@
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@ngrx/schematics"
+    ]
   }
 }
